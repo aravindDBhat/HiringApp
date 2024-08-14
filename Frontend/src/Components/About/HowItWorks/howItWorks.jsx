@@ -13,12 +13,12 @@ function HowItWorks() {
         </p>
       </div>
       <div className="howitworksContentsBody">
-        <div className="howitworksPointsContainer">
-          <div
-            className="howitworksPoints"
-            data-aos-duration="1500"
-            data-aos="fade-up"
-          >
+        <div
+          className="howitworksPointsContainer"
+          data-aos-duration="1500"
+          data-aos="fade-up"
+        >
+          <div className="howitworksPoints">
             {" "}
             <div className="logo S">
               {" "}
@@ -33,12 +33,7 @@ function HowItWorks() {
               </p>
             </div>
           </div>
-          <div
-            className="howitworksPoints"
-            data-aos-duration="1500"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
+          <div className="howitworksPoints">
             {" "}
             <div className="logo S">
               {" "}
@@ -55,13 +50,12 @@ function HowItWorks() {
             </div>
           </div>
         </div>
-        <div className="howitworksPointsContainer">
-          <div
-            className="howitworksPoints"
-            data-aos-duration="1500"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
+        <div
+          className="howitworksPointsContainer"
+          data-aos-duration="1500"
+          data-aos="fade-up"
+        >
+          <div className="howitworksPoints">
             {" "}
             <div className="logo S">
               {" "}
@@ -76,12 +70,7 @@ function HowItWorks() {
               </p>
             </div>
           </div>
-          <div
-            className="howitworksPoints"
-            data-aos-duration="1500"
-            data-aos="fade-up"
-            data-aos-delay="800"
-          >
+          <div className="howitworksPoints">
             {" "}
             <div className="logo S">
               {" "}

@@ -31,17 +31,24 @@
 /* --------------- Navbar --------------- */
 
 .navbar {
-  padding: 6px 20px;
+  padding: 0;
+  margin: 0;
   width: 100%;
   position: fixed;
-  background-color: rgba(7, 7, 7, 0.6);
+  background-color: transparent;
   z-index: 1000;
 }
+
 .navbar-contents {
-  padding-right: 10px;
+  padding: 15px 20px;
   color: white;
   position: relative;
   background-color: transparent;
+  background-color: rgba(7, 7, 7, 1);
+}
+.hiddenNav {
+  transform: translateY(-115%); /* Adjust as necessary */
+  transition: transform 1s ease;
 }
 .container-fluid a,
 .navbar-text,
@@ -97,7 +104,6 @@
   text-align: center;
   padding-top: 10px;
   width: 100%;
-  min-height: 100vh;
   background-color: rgb(251, 200, 181);
 }
 
@@ -178,7 +184,6 @@ hr {
   text-align: center;
   padding-top: 10px;
   width: 100%;
-  min-height: 100vh;
   background: linear-gradient(to bottom, #fff);
 }
 
@@ -190,6 +195,7 @@ hr {
   margin: 30px 30px 30px 30px;
   box-shadow: 5px 5px 15px #000;
   background-color: rgb(171, 249, 232);
+  width: 100%;
 }
 
 .howitworksContentsHeading {
@@ -203,12 +209,11 @@ hr {
 .howitworksContentsBody {
   padding: 30px 10px;
   background-color: rgb(171, 249, 232);
-
   width: 100%;
 }
 .howitworksPointsContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .howitworksPoints {
   padding: 10px 25px;
@@ -251,6 +256,86 @@ hr {
   line-height: 1.4;
   color: rgb(147, 164, 192);
 }
+
+/* ------------------------------ Testimonials ------------------------------ */
+.testimonials {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fff);
+}
+
+/*--------------- Testimonials Contents ---------------*/
+
+.testimonialsContent {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px 30px 30px;
+  box-shadow: 5px 5px 15px #000;
+  background-color: #fff;
+}
+.testimonialsContentHeading {
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.testimonialsContentsBody {
+  padding: 30px 10px;
+  background-color: #fff;
+  width: 100%;
+}
+.pointsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.testimonialsPoints {
+  padding: 30px 30px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #565555;
+}
+.testimonialsPoints2 {
+  background-color: rgb(171, 249, 232);
+
+  margin: 0 30px;
+}
+
+.testimonialsPoints .name {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 50px;
+}
+.testimonialsPoints .name img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+.testimonialsPoints .name p {
+  text-align: justify;
+  align-items: center;
+}
+.testimonialsPoints .name .description {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: justify;
+}
+.testimonialsPoints .description p {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 425px) {
   .landindpagecontents h1 {
     font-size: 7vw;
@@ -289,6 +374,21 @@ hr {
     align-items: center;
     text-align: center;
   }
+  .pointsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonialsPoints {
+    width: 230px;
+    margin-bottom: 20px;
+  }
+  .testimonialsPoints2 {
+    margin: 0 0 20px 0;
+  }
+  .testimonialsPoints .description p {
+    text-align: justify;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 424px) {
@@ -323,5 +423,20 @@ hr {
   .howitworksPoints .logo {
     margin-left: -35px;
     margin-top: -25px;
+  }
+  .pointsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonialsPoints {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .testimonialsPoints2 {
+    margin: 0 0 20px 0;
+  }
+  .testimonialsPoints .description p {
+    text-align: justify;
   }
 }
