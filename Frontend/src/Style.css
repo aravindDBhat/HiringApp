@@ -1,0 +1,327 @@
+.App {
+  width: 100%;
+}
+
+/* *********************************** About *********************************** */
+
+/* ------------------------------ Landing Page ------------------------------ */
+
+.landingpage {
+  min-height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(42%);
+  }
+}
+
+/* --------------- Navbar --------------- */
+
+.navbar {
+  padding: 6px 20px;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(7, 7, 7, 0.6);
+  z-index: 1000;
+}
+.navbar-contents {
+  padding-right: 10px;
+  color: white;
+  position: relative;
+  background-color: transparent;
+}
+.container-fluid a,
+.navbar-text,
+.navbar-toggler,
+.navbar-toggler-icon {
+  color: rgb(242, 250, 250);
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* --------------- Landing Page Contents --------------- */
+
+.landindpagecontents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: rgb(249, 251, 251);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 50%;
+}
+.landindpagecontents h1 {
+  font-size: 4.5vw;
+}
+.landindpagecontents p {
+  color: rgb(249, 251, 251);
+  font-size: 1.5vw;
+}
+.landindpagecontents button {
+  width: 200px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5vw;
+  box-shadow: 7px 10px 10px #050108;
+}
+
+.landindpagecontents a {
+  text-decoration: none;
+}
+
+/* ------------------------------  Features ------------------------------ */
+
+.feature {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(251, 200, 181);
+}
+
+/*--------------- Features Contents ---------------*/
+.featureContents {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px 30px 30px;
+  box-shadow: 5px 5px 15px #000;
+  background: #faf5fc;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background-color: rgb(242, 242, 243);
+}
+
+.featureContentsHeading {
+  padding: 20px 10px 0px 10px;
+  background-color: transparent;
+  color: rgb(21, 22, 69);
+}
+hr {
+  color: #000;
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+}
+.featureContentsBody {
+  padding: 50px 10px;
+  background-color: rgb(242, 242, 243);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.featurePoints {
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(255, 254, 254);
+  margin: 0 30px;
+  min-height: 300px;
+  box-shadow: 0px 5px 10px #3a3838;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.featurePoints .logo {
+  padding: 10px;
+  /* border: solid 1px #000; */
+  margin-bottom: 10px;
+  border-radius: 60%;
+  width: 70px;
+  display: inline;
+  background-color: rgb(54, 137, 245);
+  color: #fff;
+}
+
+.featureInfo h6 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.featureInfo p {
+  font-size: 14px;
+  justify-items: center;
+  text-align: justify;
+  align-items: center;
+  line-height: 1.4;
+  color: rgb(147, 164, 192);
+}
+
+/* ------------------------------  How It Works ------------------------------ */
+
+.howitworks {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fff);
+}
+
+/*--------------- How It Works Contents ---------------*/
+
+.howitworksContents {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px 30px 30px;
+  box-shadow: 5px 5px 15px #000;
+  background-color: rgb(171, 249, 232);
+}
+
+.howitworksContentsHeading {
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.howitworksContentsBody {
+  padding: 30px 10px;
+  background-color: rgb(171, 249, 232);
+
+  width: 100%;
+}
+.howitworksPointsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.howitworksPoints {
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(255, 254, 254);
+  margin: 20px 30px;
+  min-height: 200px;
+  max-width: 45%;
+  box-shadow: 0px 5px 10px #3a3838;
+  border-radius: 3px;
+}
+.howitworksPoints .logo {
+  margin-bottom: 10px;
+  color: rgb(8, 102, 225);
+  margin-left: -35px;
+  margin-top: -28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.howitworksInfo {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+  flex-direction: column;
+}
+.howitworksInfo h6 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.howitworksInfo p {
+  font-size: 14px;
+  justify-items: center;
+  text-align: justify;
+  align-items: center;
+  line-height: 1.4;
+  color: rgb(147, 164, 192);
+}
+@media screen and (max-width: 425px) {
+  .landindpagecontents h1 {
+    font-size: 7vw;
+  }
+  .landindpagecontents p {
+    color: rgb(249, 251, 251);
+    font-size: 3vw;
+  }
+  .landindpagecontents button {
+    width: 120px;
+    height: 40px;
+    font-size: 3vw;
+  }
+  .featureContentsBody {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .featurePoints {
+    margin: 10px 30px;
+  }
+  .featurePoints .logo {
+    width: 60px;
+  }
+  .howitworksPointsContainer {
+    flex-direction: column;
+  }
+  .howitworksPoints {
+    max-width: 100%;
+  }
+  .howitworksPoints .logo {
+    margin-left: -30px;
+    margin-top: -23px;
+  }
+  .howitworksInfo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 424px) {
+  .landindpagecontents h1 {
+    font-size: 6vw;
+  }
+  .landindpagecontents p {
+    color: rgb(249, 251, 251);
+    font-size: 2.5vw;
+  }
+  .landindpagecontents button {
+    width: 200px;
+    height: 45px;
+    font-size: 3vw;
+  }
+  .featureContentsBody {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .featurePoints {
+    margin: 10px 30px;
+  }
+  .featurePoints .logo {
+    width: 65px;
+  }
+  .howitworksPointsContainer {
+    flex-direction: column;
+  }
+  .howitworksPoints {
+    max-width: 100%;
+  }
+  .howitworksPoints .logo {
+    margin-left: -35px;
+    margin-top: -25px;
+  }
+}
